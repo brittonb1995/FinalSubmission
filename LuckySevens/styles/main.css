@@ -1,0 +1,70 @@
+header h1 {
+    text-align: center;
+    border: 5px dashed red;
+    color: yellow;
+    padding: 10px;
+    font-family: 'Pacifico' , cursive;
+}
+body {
+    background-color: #1DA813;
+}
+
+footer{
+    text-align: center;
+    font-weight: bold;
+}
+
+#available {
+    text-align: center;
+}
+
+form {
+    margin: 30px auto;
+    width: 500px;
+}
+.bet-label {
+    font-size: 1.75em;
+    font-weight: bold;
+    margin: auto;
+}
+
+
+#bet {
+    display: inline-block;
+    height: 25px;
+    font-size: 1.2em;
+    margin-left: 10px;
+}
+
+.play, .reset {
+    margin-top: 30px;
+    padding-left: 200px;
+}
+
+/* Table display settings */
+
+#results-table {
+    margin: auto;
+}
+
+table {
+    margin: auto;
+    border: 1px solid black;
+    width: 300px;
+    height: 150px;
+}
+
+caption {
+    color: yellow;
+    text-align:center;
+    font-size: 1.5em;
+}
+
+tr:nth-child(even) {
+    background-color: #34ED59
+}
+
+td {
+    font-weight: bold;
+    padding-left: 3px;
+}
