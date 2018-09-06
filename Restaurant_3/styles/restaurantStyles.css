@@ -1,0 +1,95 @@
+footer {
+    background-color: #44ADCD;
+}
+
+body {
+    background-color: #D9E8F0;
+}
+
+header,footer {
+    font-family: 'Pacifico', cursive;
+}
+
+.jumbotron {
+    background-color: #44ADCD;
+}
+header h1 {
+    padding: 25px;
+}
+header h3 {
+    margin-right: 10px;
+}
+
+#home-page-carousel {
+    height:700px;
+    width:750px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+#announcement {
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    font-size: 2em;
+    color: black;
+}
+
+#msg {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+footer h5 {
+    padding-top: 5px;
+    padding-bottom:5px;
+    margin: 2px
+}
+
+
+.col-md {
+    text-align: right;
+}
+
+nav a {
+    margin-left: 10px;
+}
+
+nav .btn:visited {
+    color: lightpurple;
+}
+nav .btn {
+    text-decoration: none;
+    background-color: #44ADCD;
+    color: white;
+}
+
+
+nav .btn:hover {
+    font-weight: bold;
+}
+
+#homeButton {
+    width: 20px;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+#middle-content {
+    background-color: #96B8CD;
+    padding-top: 7px;
+    margin-top: 50px;
+}
+
+#welcome {
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+}
+
+#description {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+

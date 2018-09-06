@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Our Menu</title>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+            rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="styles/restaurantStyles.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+        <noscript>JavaScript is off. This site will work better if it is enabled.</noscript>
+        <style>
+
+            .jumbotron {
+                background-image: url("images/burger.jpg");
+                background-size: cover;
+                background-position: center;
+            }
+
+            body {
+                background-color: #D9E8F0;
+            }
+
+            h3, h4, th, .bev, .price {
+                font-family: 'Pacifico', cursive;
+            }
+
+            #disclaimer {
+                font-size: .8em;
+            }
+
+            article h3,h4,p{
+                text-align:center;
+            }
+            #menu {
+                justify-content: center;
+            }
+            #menu-item {
+                float: left;
+                border: thin solid black;
+                height: 350px;
+                width: 200px;
+                margin: 10px 0 10px 20px;
+                margin
+            }
+
+            .bev-table {
+                margin-top: 40px;
+            }
+
+            .beverages {
+                border: thin solid darkgray;
+                border-collapse: collapse;
+                margin: auto;
+                width: 300px;
+                height: 250px;
+            }
+
+            th {
+                font-size: 2em;
+                background-color: #D9E8F0;
+                text-align: center;
+            }
+
+            tr:nth-child(odd) {
+                background-color: #44ADCD
+            }
+
+            .bev {
+                text-align: center;
+            }
+            .clear-float {
+                clear:both;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <header class="jumbotron">
+            <h1 align="center" style="color:white;">Burgersmiths</h1>
+        </header>
+
+
+        <div class="container" id="nav-bar">
+                <div class="row">
+                    <nav>
+                        <div class="col-md">
+                            <a class="btn" href="index.html">
+                                <img id="homeButton" src="images/home_icon.png" alt="Home"/>
+                            </a>
+                            <a class="btn" href="#">Menu</a>
+                            <a class="btn" href="contact.html">Contact Us</a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+        <div id="disclaimer">
+            <p align="center">
+                *All burgers come with a side of fries or baked beans and a medium drink. Includes unlimited refills
+            </p>
+        </div>
+
+
+        <div class="container" id="menu">
+            <article>
+                <div class="container" id="menu-item">
+                    <h3>Old Fashioned</h3>
+                    <p>
+                    There is nothing wrong with tradition. This All-American classic will send you into
+                    a feeling of nostalgia for Americana. It comes with your choice of mayo, ketchup, or mustard,
+                    pickles, lettuce, American cheese and grilled onions all on a brioche bun. Add another patty for $1.25 extra.
+                    </p>
+                    <h4>$8.50</h4>
+                </div>
+            </article>
+            <article>
+                <div class="container" id="menu-item">
+                    <h3>BBQ Burger</h3>
+                    <p>
+                        Our sweet and tangy masterpiece that is sure to hit the spot.
+                        Your choice of cheddar, American, or swiss cheese. Comes with
+                        mayo, pickles, french fried onions, and tomatoes all on a brioche bun.
+                    </p>
+                    <h4>$10.50</h4>
+                </div>
+            </article>
+
+            <article>
+                <div class="container" id="menu-item">
+                    <h3>Spicy Rio Grande Burger</h3>
+                    <p>
+                        This burger bites back! This quarter-pound rodeo is on a brioche bun complete with
+                        jalapenos, american cheese, grilled onions, lettuce, pickles, and our special spicy mustard.
+                        Feelin' risky? Add habanero for $0.75!
+                    </p>
+                    <h4>$11.50</h4>
+                </div>
+            </article>
+            <article>
+                <div class="container" id="menu-item">
+                    <h3>Cow Lover Burger</h3>
+                    <p style="font-size:.905em;">
+                        Designed for people who admire cows by choosing not to eat them. This bovine-friendly
+                        burger comes on a brioche bun. We substitute a spicy black bean patty for the traditional
+                        beef patty. The rest of the burger includes pickles, tomatoes, and grilled cheese. This
+                        burger does not include cheese. Add cheddar, american, or swiss for $0.35
+                    </p>
+                    <h4>$9.50</h4>
+                </div>
+            </article>
+        </div>
+
+        <div class="clear-float"></div>
+
+        <section class="bev-table">
+
+            <table class="beverages">
+                <thead>
+                    <tr>
+                        <th colspan="2">Beverages</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="bev">Soft Drink</td>
+                        <td class="price">$2.50</td>
+                    </tr>
+
+                    <tr>
+                        <td class="bev">Iced Tea</td>
+                        <td class="price">$2.50</td>
+                    </tr>
+
+                    <tr>
+                        <td class="bev">Lemonade</td>
+                        <td class="price">$2.00</td>
+                    </tr>
+
+                    <tr>
+                        <td class="bev">Water</td>
+                        <td class="price">$0.50</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+
+
+
+        <hr/>
+        <footer>
+            <h5 id="address" align="center">555 W 3rd St, Dallas, TX, 75077</h5>
+            <h5 id="phone" align="center">972-555-5678</h5>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </body>
+</html>

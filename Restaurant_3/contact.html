@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Contact Us</title>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+            rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="styles/restaurantStyles.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+        <style>
+            body {
+                background-color: white;
+            }
+            .required {
+                font-weight: bold;
+            }
+
+        </style>
+        <noscript>JavaScript is off. This site will work better if it is enabled.</noscript>
+    </head>
+    <body>
+
+            <header class="jumbotron">
+                <h1 align="center">Burgersmiths</h1>
+            </header>
+
+
+            <div class="container" id="nav-bar">
+                <div class="row">
+                    <nav>
+                        <div class="col-md">
+                            <a class="btn" href="index.html">
+                                <img id="homeButton" src="images/home_icon.png" alt="Home"/>
+                            </a>
+                            <a class="btn" href="menu.html">Menu</a>
+                            <a class="btn" href="#">Contact Us</a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+
+            <div class="container ml-3">
+                <form name="contact-form" action="submit.html" method="POST" onsubmit="return validateItems();">
+
+                    <!--Name,Email,Phone-->
+                    <label for="name" class="required">Name:</label>
+                    <input type="text" id="name" name="name"><br/>
+
+                    <label for="email" class="required">Email:</label>
+                    <input type="text" id="email" name="email"><br/>
+
+                    <label for="phone" class="required">Phone:</label>
+                    <input type="text" id="phone-number" name="phone-number"><br/>
+
+                    <!--Dropdown select-->
+                    <label for="reason" class="required">Reason for Inquiry:</label>
+                    <select id="reason" name="reason">
+                        <option value="default" selected>Catering</option>
+                        <option value="private">Private Party</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="other">Other</option>
+                    </select><br/>
+
+                    <label for="additional">Additional Information:</label><br/>
+                    <textarea id="additional" name="additonal" style="height:75px"></textarea><br/>
+
+                    <!--Radio Buttons-->
+                    <label>Have you been to the restaurant?</label>
+                    <input type="radio" id="choice1" name="question" value="no" checked>
+                    <label for="choice1">No</label>
+                    <input type="radio" id="choice2" name="question" value="yes">
+                    <label for="choice2">Yes</label> <br/>
+
+                    <!--Checkboxes-->
+                    <label>Best days to contact you:</label>
+                    <input type="checkbox" id="M" name="day" value="M">
+                    <label for="M">M</label>
+                    <input type="checkbox" id="T" name="day" value="T">
+                    <label for="T">T</label>
+                    <input type="checkbox" id="W" name="day" value="W">
+                    <label for="W">W</label>
+                    <input type="checkbox" id="Th" name="day" value="Th">
+                    <label for="Th">Th</label>
+                    <input type="checkbox" id="F" name="day" value="F">
+                    <label for="F">F</label><br/>
+
+                    <!--Submit Button-->
+                    <input type="submit" name="submit" value="Submit Entry">
+                </form>
+            </div>
+
+
+            <footer>
+                    <h5 id="address" align="center">555 W 3rd St, Dallas, TX, 75077</h5>
+                    <h5 id="phone" align="center">972-555-5678</h5>
+            </footer>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script src="scripts/contact.js"></script>
+    </body>
+</html>
